@@ -1,0 +1,53 @@
+{
+  "voluntarios": [
+    {
+      "id": "1",
+      "nome": "fundador",
+      "email": "ani@mal.com",
+      "senha": "auau123"
+    }
+  ],
+  "animais": [
+    {
+      "id": "1",
+      "nome": "cachorro"
+    },
+    {
+      "id": "2",
+      "nome": "gato"
+    },
+    {
+      "id": "3",
+      "nome": "cavalo"
+    },
+    {
+      "id": "4",
+      "nome": "ave"
+    },
+    {
+      "id": "5",
+      "nome": "peixe"
+    }
+  ],
+
+  "vacina":[
+    {
+        "id":"1",
+        "nome":"sim"
+    },
+    {
+        "id":"2",
+        "nome":"não"
+    }
+  ],
+  "adote": [
+    {
+      "id": "1",
+      "nome": "Manchado",
+      "tipo": "cachorro",
+      "raca": "vira-lata",
+      "vacinado": "sim",
+      "foto": "https://animais-estimacao.com/fotos/419258087_6771578.jpg"
+    }
+  ]
+}
