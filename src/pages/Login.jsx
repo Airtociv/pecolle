@@ -11,9 +11,8 @@ import { useNavigate } from "react-router-dom";
 const url = "http://localhost:5000/voluntarios";
 
 const Login = () => {
-
-  localStorage.removeItem("userName")
-  localStorage.removeItem("email")
+  localStorage.removeItem("userName");
+  localStorage.removeItem("email");
 
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -79,7 +78,7 @@ const Login = () => {
         <span>LOGIN</span>
 
         <Form onSubmit={handleLogin}>
-          <FloatingLabel controlId="inputVol" label = "Email" >
+          <FloatingLabel controlId="inputVol" label="Email">
             <Form.Control
               type="email"
               placeholder="name@example.com"
@@ -90,22 +89,22 @@ const Login = () => {
             />
           </FloatingLabel>
 
-          <FloatingLabel controlId="passVol" label = "Senha">
-            <Form.Control 
-            type="password"
-            placeholder="senha"
-            value={senha}
-            onChange={(e)=>{
-              setSenha(e.target.value)
-            }} />
+          <FloatingLabel controlId="passVol" label="Senha">
+            <Form.Control
+              type="password"
+              placeholder="senha"
+              value={senha}
+              onChange={(e) => {
+                setSenha(e.target.value);
+              }}
+            />
           </FloatingLabel>
-            <Alert variant={alertVariant} className={alertClass}>
-              {alertMensagem}
-            </Alert>
-            <Button variant="light" type="submit" className="mt-4" size="lg">
-              Entrar
-            </Button>
-
+          <Alert variant={alertVariant} className={alertClass}>
+            {alertMensagem}
+          </Alert>
+          <Button variant="light" type="submit" className="mt-4" size="lg">
+            Entrar
+          </Button>
         </Form>
       </Container>
     </div>

@@ -29,15 +29,14 @@
       "nome": "peixe"
     }
   ],
-
-  "vacina":[
+  "vacina": [
     {
-        "id":"1",
-        "nome":"sim"
+      "id": "1",
+      "nome": "sim"
     },
     {
-        "id":"2",
-        "nome":"não"
+      "id": "2",
+      "nome": "não"
     }
   ],
   "adote": [
@@ -48,6 +47,14 @@
       "raca": "vira-lata",
       "vacinado": "sim",
       "foto": "https://animais-estimacao.com/fotos/419258087_6771578.jpg"
+    },
+    {
+      "id": "b655",
+      "nome": "asdas",
+      "tipo": "gato",
+      "raca": "asdasdas",
+      "vacinado": "não",
+      "fotoUrl": ""
     }
   ]
 }

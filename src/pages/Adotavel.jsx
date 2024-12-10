@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 
 const urlMal = "http://localhost:5000/animais"
 const urlReg ="http://localhost:5000/adote"
-const urlVaci =""
+const urlVaci ="http://localhost:5000/vacina"
 
 
 function Adotavel() {
@@ -31,8 +31,8 @@ const linkImagem ="https://m.media-amazon.com/images/I/516AngdquqL._SL1200_.jpg"
 
 const[nome,setNome] = useState("")
 const[tipo,setTipo] = useState("")
-const[raca,setRaca] = useState("")
-const[vacinado,setVacinado] = useState("")
+const[raca,setRaca] = useState("cachorro")
+const[vacinado,setVacinado] = useState("sim")
 const[fotoUrl,setFotoUrl] = useState("")
 
 
@@ -78,8 +78,6 @@ const handleSubmit = async (e) => {
 
   if (nome != "") {
     if (raca != "") {
-      if (vacinado != "") {
-
         const pet ={nome,tipo,raca,vacinado,fotoUrl}
         console.log(pet);
         try{
@@ -102,10 +100,6 @@ const handleSubmit = async (e) => {
           console.log(erro);
           
         }
-      } else {
-        setAlertClass("mb-3 mt-2");
-        setAlertMensagem("O campo vacinado não pode ficar vazio");
-      }
     } else {
       setAlertClass("mb-3 mt-2");
       setAlertMensagem("O campo raça não pode ficar vazio");
